@@ -1,0 +1,30 @@
+img{
+   width: 700px;
+align-items: center;
+   
+}
+
+.cc{
+    display: flex;
+    flex-direction: row;
+    margin-left: -30px;
+    background-color: transparent;
+}
+.Text1{
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-align: center;
+margin-left: 290px;
+font-size: 30px;     
+  font-weight: bold;
+}
+.img-main p {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 290px;
+    color: red;
+}
+.main h1{
+    color:red;
+}
+
+

@@ -1,16 +1,13 @@
 import axios from 'axios';
 
-const LoaderAllItems = async (detail, link) => {
+const LoaderAllItems = async (updateData, url) => {
     try {
-        const url = (`http://localhost:3001/users/list`)
-        const res = await axios.get(url)
-        detail(res.data.body)
-        
+        const res = await axios.get(url);
+        updateData(res.data.message); // La API devuelve la URL de la imagen en `message`
     } catch (error) {
         console.error(error);
-        detail('null');
+        updateData(''); // Deja `dogImage` vacío si ocurre un error
     }
-    return detail
-}
+};
 
-export default LoaderAllItems
+export default LoaderAllItems;

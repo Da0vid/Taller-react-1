@@ -1,0 +1,75 @@
+.animated-shadow {
+   color: #050505;
+   font: normal 80px Varela Round, sans-serif;
+   height: 140px;
+   left: 0;
+   letter-spacing: 5px;
+   text-align: center;
+   text-transform: uppercase;
+   width: 100%;
+   animation: move linear 2000ms infinite;
+   z-index: 2
+ }
+ /*Animación para rotar las sombras*/
+ @keyframes move {
+   0% {
+     text-shadow:
+       4px -4px 0 #06da57,
+       3px -3px 0 #06da57,
+       2px -2px 0 #06da57,
+       1px -1px 0 #06da57,
+       -4px 4px 0 #0658a5,
+       -3px 3px 0 #0658a5,
+       -2px 2px 0 #0658a5,
+       -1px 1px 0 #0658a5
+     ;
+   }
+   25% {
+     text-shadow:
+       -4px -4px 0 #0658a5,
+       -3px -3px 0 #0658a5,
+       -2px -2px 0 #0658a5,
+       -1px -1px 0 #0658a5,
+       4px 4px 0 #06da57,
+       3px 3px 0 #06da57,
+       2px 2px 0 #06da57,
+       1px 1px 0 #06da57
+     ;
+   }
+   50% {
+     text-shadow:
+       -4px 4px 0 #06da57,
+       -3px 3px 0 #06da57,
+       -2px 2px 0 #06da57,
+       -1px 1px 0 #06da57,
+       4px -4px 0 #0658a5,
+       3px -3px 0 #0658a5,
+       2px -2px 0 #0658a5,
+       1px -1px 0 #0658a5
+     ;
+   }
+   75% {
+     text-shadow:
+       4px 4px 0 #0658a5,
+       3px 3px 0 #0658a5,
+       2px 2px 0 #0658a5,
+       1px 1px 0 #0658a5,
+       -4px -4px 0 #06da57,
+       -3px -3px 0 #06da57,
+       -2px -2px 0 #06da57,
+       -1px -1px 0 #06da57
+     ;
+   }
+   100% {
+     text-shadow:
+       4px -4px 0 #06da57,
+       3px -3px 0 #06da57,
+       2px -2px 0 #06da57,
+       1px -1px 0 #06da57,
+       -4px 4px 0 #0658a5,
+       -3px 3px 0 #0658a5,
+       -2px 2px 0 #0658a5,
+       -1px 1px 0 #0658a5
+     ;
+   }
+ }
